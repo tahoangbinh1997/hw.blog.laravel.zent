@@ -19,9 +19,23 @@
 		return view('layouts.master');
 	});
 
-	Route::get('/','HomeController@index');
+	Route::get('/','BlogController@index');\
 
-	Route::get('blog/{slug}','HomeController@detail');
+	// Route::get('/tag/{id}',function($id){
+	// 	$tag = \App\Tag::find($id);
+	// 	return view('tag',compact('tag'));
+	// });
 
-	Route::get('category/{slug}','HomeController@category');
+	// Route::get('/{id}',function($id){
+	// 	$category = \App\Category::find($id);
+	// 	return view('category',compact('category'));
+	// });
 
+	// Route::get('blog/{slug}','BlogController@detail');
+
+	// Route::get('category/{slug}','BlogController@category');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

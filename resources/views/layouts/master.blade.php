@@ -218,7 +218,7 @@
                     </div>                
                 </li>
                 <li>
-                	<img src="img/image-slider-4.jpg" alt="image slider 4">
+                	<img src="{{ asset('blog_assets/img/image-slider-4.jpg') }}" alt="image slider 4">
                 	<div class="pattern"></div>
                     <div class="tada-text-container">
                     	<h1>AENEAN AC DIAM</h1>

@@ -46,8 +46,8 @@
                
     	<!-- NAVIGATION -->
     	<div class="navigation">
-        	<a href="#" class="prev"><i class="icon-arrow-left8"></i> Previous Posts</a>
-            <a href="#" class="next">Next Posts <i class="icon-arrow-right8"></i></a>
+        	<a href="{{$posts->previousPageUrl()}}" class="prev"><i class="icon-arrow-left8"></i> Previous Posts</a>
+            <a href="{{$posts->nextPageUrl()}}" class="next">Next Posts <i class="icon-arrow-right8"></i></a>
             <div class="clearfix"></div>
         </div>
     
@@ -61,12 +61,12 @@
         <!-- ABOUT ME -->                    
         <div class="widget about-me">
         	<div class="ab-image">
-            	<img src="img/about-me.jpg" alt="about me">
+            	<img src="{{asset('')}}/blog_assets/img/about-me.jpg" alt="about me">
                 <div class="ab-title">About Me</div>
             </div>
             <div class="ad-text">
             	<p>Lorem ipsum dolor sit consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                <span class="signing"><img src="img/signing.png" alt="signing"></span>
+                <span class="signing"><img src="{{asset('')}}/blog_assets/img/signing.png" alt="signing"></span>
             </div>
         </div>
 
@@ -79,7 +79,7 @@
             <div class="posts-container">
             
             	<div class="item">
-                	<img src="img/latest-posts-1.jpg" alt="post 1" class="post-image">
+                	<img src="{{asset('')}}/blog_assets/img/latest-posts-1.jpg" alt="post 1" class="post-image">
                     <div class="info-post">
                     	<h5><a href="#">MAECENAS <br> CONSECTETUR</a></h5>
                     	<span class="date">07 JUNE 2016</span>	
@@ -88,7 +88,7 @@
                 </div>
 
             	<div class="item">
-                	<img src="img/latest-posts-2.jpg" alt="post 2" class="post-image">
+                	<img src="{{asset('')}}/blog_assets/img/latest-posts-2.jpg" alt="post 2" class="post-image">
                     <div class="info-post">
                     	<h5><a href="#">MAURIS SIT AMET</a></h5>
                     	<span class="date">06 JUNE 2016</span>                       	
@@ -97,7 +97,7 @@
                 </div>
 
             	<div class="item">
-                	<img src="img/latest-posts-3.jpg" alt="post 3" class="post-image">
+                	<img src="{{asset('')}}/blog_assets/img/latest-posts-3.jpg" alt="post 3" class="post-image">
                     <div class="info-post">
                     	<h5><a href="#">NAM EGET <br> PULVINAR ANTE</a></h5>
                     	<span class="date">05 JUNE 2016</span>                        	
@@ -106,7 +106,7 @@
                 </div>
 
             	<div class="item">
-                	<img src="img/latest-posts-4.jpg" alt="post 4" class="post-image">
+                	<img src="{{asset('')}}/blog_assets/img/latest-posts-4.jpg" alt="post 4" class="post-image">
                     <div class="info-post">
                     	<h5><a href="#">VIVAMUS ET TURPIS LACINIA</a></h5>
                     	<span class="date">04 JUNE 2016</span>                     	
@@ -161,7 +161,7 @@
         <!-- ADVERTISING -->                           
         <div class="widget advertising">
 			<div class="advertising-container">
-            	<img src="img/350x300.png" alt="banner 350x300">
+            	<img src="{{asset('')}}/blog_assets/img/350x300.png" alt="banner 350x300">
             </div>
 		</div>
 
